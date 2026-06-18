@@ -1,0 +1,18 @@
+{
+  "name": "Trockenkammer Protokoll",
+  "short_name": "Trockenkammer",
+  "description": "Fichtenholz Trockenprotokoll mit Phasensteuerung",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f2ede5",
+  "theme_color": "#2c1a0e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

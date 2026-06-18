@@ -346,7 +346,7 @@ function render() {
           <div>
             <label style="font-size:11px;color:#7a6a58;font-weight:600">Lufttemperatur (°C)</label>
             <div style="display:flex;align-items:center;gap:6px;margin-top:3px">
-              <input type="number" id="inp-temp" value="${state.inputs.temp}" oninput="state.inputs.temp=this.value;renderBadges()"
+              <input type="text" inputmode="decimal" id="inp-temp" value="${state.inputs.temp}" oninput="state.inputs.temp=this.value;renderBadges()"
                 placeholder="z.B. 49" style="border:1.5px solid #d0c8bc;border-radius:6px;padding:8px;font-size:16px;width:100%;box-sizing:border-box">
               ${badge(tStatus)}
             </div>
@@ -354,19 +354,19 @@ function render() {
           <div>
             <label style="font-size:11px;color:#7a6a58;font-weight:600">Luftfeuchte (% rF)</label>
             <div style="display:flex;align-items:center;gap:6px;margin-top:3px">
-              <input type="number" id="inp-rh" value="${state.inputs.rh}" oninput="state.inputs.rh=this.value;renderBadges()"
+              <input type="text" inputmode="decimal" id="inp-rh" value="${state.inputs.rh}" oninput="state.inputs.rh=this.value;renderBadges()"
                 placeholder="z.B. 94" style="border:1.5px solid #d0c8bc;border-radius:6px;padding:8px;font-size:16px;width:100%;box-sizing:border-box">
               ${badge(rhStatus)}
             </div>
           </div>
           <div>
             <label style="font-size:11px;color:#7a6a58;font-weight:600">Holzfeuchte (%)</label>
-            <input type="number" id="inp-wm" value="${state.inputs.wm}" oninput="state.inputs.wm=this.value"
+            <input type="text" inputmode="decimal" id="inp-wm" value="${state.inputs.wm}" oninput="state.inputs.wm=this.value"
               placeholder="z.B. 18" style="border:1.5px solid #d0c8bc;border-radius:6px;padding:8px;font-size:16px;width:100%;box-sizing:border-box;margin-top:3px">
           </div>
           <div>
             <label style="font-size:11px;color:#7a6a58;font-weight:600">Kerntemperatur (°C)</label>
-            <input type="number" id="inp-kern" value="${state.inputs.kern}" oninput="state.inputs.kern=this.value"
+            <input type="text" inputmode="decimal" id="inp-kern" value="${state.inputs.kern}" oninput="state.inputs.kern=this.value"
               placeholder="falls gemessen" style="border:1.5px solid #d0c8bc;border-radius:6px;padding:8px;font-size:16px;width:100%;box-sizing:border-box;margin-top:3px">
           </div>
         </div>
